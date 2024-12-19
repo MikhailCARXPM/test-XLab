@@ -20,7 +20,7 @@ namespace TZ
                 return;
             }
             m_moved = true;
-            cloud.PlayFX();
+            cloud.StopFX();
             m_targetIndex++;
             if (m_targetIndex >= targets.Length) { m_targetIndex = 0; }
         }
@@ -28,14 +28,15 @@ namespace TZ
         {
             if (!m_moved)
             { return; }
+
             Transform target = targets[m_targetIndex];
             Vector3 targetPosition = new Vector3(target.position.x, cloud.transform.position.y, target.position.z);
-            Vector3 offset = (targetPosition = cloud.transform.position).normalized * Time.deltaTime * moveSpeed;
+            Vector3 offset = (targetPosition - cloud.transform.position).normalized * Time.deltaTime * moveSpeed;
             if (Vector3.Distance(cloud.transform.position, targetPosition) < offset.magnitude)
             {
                 cloud.transform.position = targetPosition;
-                m_moved |= false;
-                cloud.StopFX();
+                m_moved = false;
+                cloud.PlayFX();
             }
             else
             {
