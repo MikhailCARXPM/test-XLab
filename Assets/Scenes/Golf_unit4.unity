@@ -6097,7 +6097,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 813039782}
-  - component: {fileID: 813039783}
   m_Layer: 0
   m_Name: Stick
   m_TagString: Untagged
@@ -6112,42 +6111,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813039781}
-  m_LocalRotation: {x: 0.0006993635, y: 0.18129657, z: 0.001278609, w: 0.9834274}
-  m_LocalPosition: {x: 0.6780782, y: 1.3048611, z: -0.008795916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7722, y: 0.8654, z: 0.0792}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1110561678}
   m_Father: {fileID: 2916151948392805696}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0.052, y: 20.891, z: 0.159}
---- !u!114 &813039783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813039781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5b25402128bbac4393a00c60e30b8a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnCollision:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &817836191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6612,7 +6584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874284610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 97.544, y: 25.2, z: 61.848}
+  m_LocalPosition: {x: 97.823, y: 22.99, z: 61.848}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10351,6 +10323,33 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 370782fdfcf1fbe42b2cd21bf23903dd, type: 3}
+--- !u!114 &1425106017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425106013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b25402128bbac4393a00c60e30b8a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnCollision:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2916151948392805704}
+        m_TargetAssemblyTypeName: Golf.Player, Assembly-CSharp
+        m_MethodName: OnCollisionStick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1432348629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20077,15 +20076,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2728306578926858670, guid: 58cd754c3dde1f944a2d86bd93a982bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.030494671
+      value: -0.08519727
       objectReference: {fileID: 0}
     - target: {fileID: 2728306578926858670, guid: 58cd754c3dde1f944a2d86bd93a982bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15895653
+      value: -0.15739983
       objectReference: {fileID: 0}
     - target: {fileID: 2728306578926858670, guid: 58cd754c3dde1f944a2d86bd93a982bb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.19948581
+      value: 0.17280003
       objectReference: {fileID: 0}
     - target: {fileID: 2728306578926858670, guid: 58cd754c3dde1f944a2d86bd93a982bb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20097,7 +20096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2728306578926858670, guid: 58cd754c3dde1f944a2d86bd93a982bb, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.25729424
+      value: -0.2572942
       objectReference: {fileID: 0}
     - target: {fileID: 2728306578926858670, guid: 58cd754c3dde1f944a2d86bd93a982bb, type: 3}
       propertyPath: m_LocalRotation.z
@@ -21062,6 +21061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2916151948392805696}
+  - component: {fileID: 2916151948392805704}
   m_Layer: 0
   m_Name: Golfer
   m_TagString: Untagged
@@ -21069,6 +21069,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2916151948392805704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2916151948392805703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d87f72eecc44f499448f57949b80ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stick: {fileID: 813039782}
+  range: 40
+  speed: 500
 --- !u!1 &2916151948409461397
 GameObject:
   m_ObjectHideFlags: 0
@@ -21109,7 +21124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2916151948423040743}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.4999999, w: 0.5000001}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: -0.455, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
