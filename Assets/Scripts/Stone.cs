@@ -17,9 +17,9 @@ namespace Golf
         {
             if (collision.transform.TryGetComponent(out Stone other))
             { 
-            if (!other.isAffect)
+                if (!other.isAffect)
                 {
-                    onCollisionStone?.Invoke();
+                    GameEvents.CollisionStoneInvoke(collision);
                 }
 
             }
